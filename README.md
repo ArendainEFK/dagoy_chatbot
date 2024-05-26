@@ -46,3 +46,6 @@ This project creates a web application using Streamlit, integrated with the Goog
 
 ## 🎉 The Conclusion:
 This project demonstrates how to leverage Python, Streamlit, and the Google GenerativeAI API to create a chat-based AI assistant for providing information and assistance about Iloilo City. With its intuitive interface and powerful backend, users can engage in natural language conversations with the assistant, enhancing their experience and knowledge about the city. This final task for our CCS 229 subject also shows how easy it is to create a custom chatbot with a custom knowledge base especially in today's generation.
+
+
+## 👋 [Chat with Dagoy!](https://dagoychatbot-arendain.streamlit.app)
