@@ -2,6 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 from dotenv import load_dotenv
 import os
+from chat_history import chat_history
 
 # Configure API key from environment variable
 load_dotenv()
@@ -48,16 +49,6 @@ model = genai.GenerativeModel(
   generation_config=generation_config,
 )
 
-# Create chat history
-chat_history = [
-  {
-    "role": "model",
-    "parts": [
-      "Hello! Welcome to Iloilo City! My name is Dagoy and I'll be your friendly assistant during your stay here. Feel free to ask me anything about Iloilo City, and I'll be happy to help.\n\nMay I know your name? (This is optional. You can skip this if you don't want to provide your name.)",
-    ],
-  },
-]
-
 def translate_role_for_streamlit(user_role):
     if user_role == "model":
         return "assistant"
@@ -82,7 +73,6 @@ for message in st.session_state.chat_session.history:
 st.title("🌇 Ask Dagoy about Iloilo City!")
 st.text("Dagoy is a Gemini Powered AI assistant that will \ncater any questions you have about Iloilo City. \nCreated By: Ed Francis Kyle G. Arendain")
 
-#st.subheader("Your friendly AI assistant for all things Iloilo")
 
 user_input = st.chat_input("Ask Dagoy anything...")
 
