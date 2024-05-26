@@ -1,3 +1,4 @@
+#Chat history from Google's Makersuite. Prompts used to train Dagoy.
 chat_history=[
     {
       "role": "user",
