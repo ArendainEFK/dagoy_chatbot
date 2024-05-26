@@ -1,5 +1,4 @@
-# 🌇 Chat with Dagoy - Iloilo City Assistant 🌇
-### 👋 [Chat with Dagoy!](https://dagoychatbot-arendain.streamlit.app)
+# 🌇 [Chat with Dagoy - Iloilo City Assistant](https://dagoychatbot-arendain.streamlit.app) 🌇
 
 ## 👀 Overview:
 This project creates a web application using Streamlit, integrated with the Google GenerativeAI API, to facilitate a chat-based interaction with an AI assistant named Dagoy. The assistant is designed to provide information and assistance related to Iloilo City, Philippines. Currently the model's knowledge base composes of 3,781 tokens. Said token are the interaction between the user and Gemini's respones which are fitted in order for the model to serve its purpose.
